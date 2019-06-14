@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Aref+Ruqaa" rel="stylesheet">
+    
+	<title>viajes</title>
+</head>
+<body  style="background: #ececaa">
+  <h3 style="color:red;text-align:center;margin-top:2px;font-size:50px">
+    <b>VIAJES</b>
+  </h3>
+        <nav class="nav">
+                <div class="menu">
+                  <a href="#">INICIO</a>
+                </div>
+                <div class="menu">
+                  <a href="hospedaje.html">HOSPEDAJE</a>
+                </div>
+                <div class="menu">
+                  <a href="restaurant.html">RESTAURANT</a>
+                </div>
+                <div class="menu">
+                  <a href="auto.html">AUTOMOVILES</a>
+                </div>
+                <div class="menu">
+                  <a href="viajes.html">VIAJES</a>
+                </div>
+              </nav>
+              <section id="info">
+                <div style="display: flex;">
+                  <div class="f1 f">
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis
+                      sit voluptatem odit dignissimos omnis culpa, repudiandae ipsam fuga.
+                      Quasi quia dolores adipisci omnis provident earum minus modi,
+                      praesentium nulla nisi. Quae tenetur eos assumenda aspernatur ab,
+                      cumque fugiat aliquam ut? At perspiciatis commodi deserunt nostrum,
+                      magnam neque maxime iste cum aliquid asperiores, architecto est
+                      praesentium omnis saepe, quod dignissimos ipsam! Asperiores, quos
+                      magnam omnis porro suscipit adipisci nostrum dolore sequi fugit
+                      beatae nobis dignissimos unde atque magni sapiente non tenetur iure
+                      corporis nisi placeat eius voluptate aliquam, ab cupiditate! Veniam?
+                      Molestias repudiandae neque ad accusantium iusto explicabo
+                      voluptatem animi repellat nemo possimus cum, harum sit id veniam
+                      minima necessitatibus ullam ut consequatur dolorem atque tempore?
+                      Doloribus aperiam commodi quaerat quibusdam?
+                    </p>
+                  </div>
+                  <div class="f2 f">
+                    <img src="img/viaje.jpeg" alt="" height="350px" />
+                  </div>
+                </div>
+              </section>
+	<div class="container">
+      <div class="row">
+        <div class="">
+          <div class="form-group">
+                              <label for="exampleInputEmail1">Numero de turistas:</label>
+                              <input onchange="validateOption(event)" type="number" class="form-control" id="numero" placeholder="0 - 23">
+                  </div>
+          <div class="form-group">
+            <label for="destino">Elija su destino </label>
+            <select class="form-control" id="destino" onchange="validateOption(event)" >
+                          <option value="0">-------------</option>
+                          <option value="300">Santiago - s./300</option>
+                          <option value="375">Buenos Aires - s./375</option>
+                          <option value="285">Bogota - s./285</option>
+                          <option value="120">La Paz - s./120</option>
+                          <option value="145">Quito- s./145</option>
+                          <option value="275">Rio de Janeiro - s./275</option>
+            </select>
+          </div>
+          <br><br>
+         
+        </div>
+        <div class="text-center" id="res">
+                        
+        </div>
+      </div>
+      
+  <!--   <button type="button" onclick="total()">sadasdad</button>-->
+  </div>
+  <div>
+    <main>
+      <h2>Desea saber el total ?</h2>
+      <input type="radio" id="mostrar-modal" name="modal"/>
+      <label for="mostrar-modal" onclick="total()">Ver total</label>
+      <input type="radio" id="cerrar-modal" name="modal"/>
+      <label for="cerrar-modal">X</label>
+      <div id="modal">
+       
+       <ul id="li">
+         <li  > CLIENTE : <span id="cliente"> </span></li>
+         <ul>
+           <li>SERVICIOS</li>
+           <li>Alquiler de Auto <span id="auto"></span></li>
+           <li>Hospedaje <span id="hos"></span></li>
+           <li>Restaurant <span id="rest"></span></li>
+           <li>Viaje <span id="viaje"></span></li>
+         </ul>
+         TOTAL <span id="total"></span>
+      </ul>
+      </div>
+    </main></div>
+    <br><br><br><br>
+</body>
+<script src="script/js.js"></script>
+</html>
